@@ -1,0 +1,39 @@
+td, th, caption{
+    border: 2px solid rgba(0,0,0,0.8);
+}
+
+td{
+    padding: 15px;
+}
+
+table{
+    border-collapse: collapse;
+}
+
+table tr:nth-child(even) {
+    background-color: #ff21c8bf;
+}
+
+table tr:nth-child(odd) {
+    background-color: #ff2121bf;
+}
+
+caption{
+    background-color: #ff2185bf;
+}
+
+form{
+    display: flex;
+    flex-direction: row
+}
+
+#send{
+    background-color: #f040c4bf;
+}
+
+.flex-it{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 5px;
+}
