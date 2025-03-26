@@ -10,4 +10,5 @@ import { FormsModule } from '@angular/forms';
 })
 export class AppComponent {
   title = 'digital-department-application';
+  id: string | null = "0";
 }
