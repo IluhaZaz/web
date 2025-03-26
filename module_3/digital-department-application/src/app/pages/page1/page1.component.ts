@@ -1,6 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute, RouterModule } from '@angular/router';
+import { ActivatedRoute, Router, RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-page1',
@@ -10,9 +10,13 @@ import { ActivatedRoute, RouterModule } from '@angular/router';
 })
 export class Page1Component implements OnInit{
   id: string | null = "0";
-  constructor(private route: ActivatedRoute) {}
+  constructor(private route: ActivatedRoute, private router: Router) {}
 
   ngOnInit() {
     this.id = this.route.snapshot.paramMap.get('id');
+  }
+
+  goMain(){
+    this.router.navigateByUrl("/")
   }
 }
