@@ -1,6 +1,7 @@
 body{
     background-color: azure;
     color: rgb(35, 32, 32);
+    text-align: center;
 }
 
 a{
@@ -21,5 +22,14 @@ button:hover{
 }
 
 h2{
+    color: rgb(121, 43, 177);
+}
+
+h1{
     color: indigo;
+}
+
+input, textarea{
+    border: none;
+    margin: 5px 5px;
 }

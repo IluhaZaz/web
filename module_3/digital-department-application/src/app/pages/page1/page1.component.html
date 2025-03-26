@@ -1,2 +1,26 @@
 <p>Полученный параметр ID: {{ id }}</p>
+
+<div class="container">
+    <h1>Добавление товаров</h1>
+    
+<div class="row">
+    <h2>Форма добавления</h2>
+    <app-item-form (formSubmit)="onFormSubmit($event)"></app-item-form>
+    </div>
+    
+    <h2>Список товаров</h2>
+    
+    <div *ngIf="items.length === 0">
+        Нет добавленных товаров
+    </div>
+    
+    <div *ngFor="let item of items">
+        <div class="form-item">
+        <h5>{{ item.name }}</h5>
+        <p>{{ item.description }}</p>
+        <p><strong>Цена:</strong> {{ item.price | currency }}</p>
+        </div>
+    </div>
+</div>
+
 <button (click)="goMain()">На главную</button>
