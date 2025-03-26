@@ -3,9 +3,16 @@
 <div class="container">
     <h1>Добавление товаров</h1>
     
-<div class="row">
-    <h2>Форма добавления</h2>
-    <app-item-form (formSubmit)="onFormSubmit($event)"></app-item-form>
+    <div>
+        <h2>Форма добавления</h2>
+        <app-item-form (formSubmit)="onFormSubmit($event)"></app-item-form>
+    </div>
+
+    <h1>Добавление товаров (Template-Driven)</h1>
+    
+    <div>
+        <h2>Форма добавления</h2>
+        <app-item-form-td (formSubmit)="onFormSubmit($event)"></app-item-form-td>
     </div>
     
     <h2>Список товаров</h2>
