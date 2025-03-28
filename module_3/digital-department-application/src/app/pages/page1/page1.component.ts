@@ -3,6 +3,7 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router, RouterModule } from '@angular/router';
 import { ItemFormComponent } from '../../item-form/item-form.component';
 import { ItemFormTDComponent } from '../../item-form-td/item-form-td.component';
+import { PriceFormatPipe } from '../../core/pipes/currency.pipe';
 
 interface Item {
   name: string;
@@ -12,7 +13,7 @@ interface Item {
 
 @Component({
   selector: 'app-page1',
-  imports: [CommonModule, RouterModule, ItemFormComponent, ItemFormTDComponent],
+  imports: [CommonModule, RouterModule, ItemFormComponent, ItemFormTDComponent, PriceFormatPipe],
   templateUrl: './page1.component.html',
   styleUrl: './page1.component.scss'
 })
