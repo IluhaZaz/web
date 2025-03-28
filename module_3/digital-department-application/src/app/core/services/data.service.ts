@@ -25,4 +25,8 @@ export class DataService {
       })
     );
   }
+
+  readInvalidData(): Observable<Product[]> {
+    return this.http.get<Product[]>('uvucyfctfxtdx');
+  }
 }

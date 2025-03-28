@@ -22,6 +22,8 @@ export class Page2Component {
         return of([]);
       })
     );
+
+    this.dataService.readInvalidData().subscribe();
   }
 
   goMain(){
